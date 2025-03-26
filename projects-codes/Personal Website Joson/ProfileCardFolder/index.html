@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Profile Card</title>
+    </head>
+    <body>
+
+        <audio src="" id="audio"></audio>
+
+        <!-- Card -->
+
+        <div class="card">
+            <div class="aboutme">
+                <button class="btn aboutme-btn" onclick="toggleAbout()"><i class="fa-solid fa-user"></i></button>
+            </div>
+
+        <!-- About Me -->
+
+                <div class="sub-about-box" id="aboutMe">
+                    <div class="about-me">
+                        <div class="aboutme-info">
+                            <h3>About Me</h3>
+                        </div>
+                        <hr>
+
+                        <p class="Me-info">My name is Fredienick Joson, and I'm a first-year Bachelor of Science in Information Technology student at CvSU Silang. I don't have any prior experience in this field, but I'm hoping to learn how to code and do something related in this course.</p>
+
+                    </div>
+                </div>
+
+        <!-- Menu Bar Button -->
+            
+            <div class="menu">
+                <button class="btn menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+
+        <!-- Games that I play -->
+
+                <div class="sub-menu-box" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="game-info">
+                            <h3>My Games</h3>
+                        </div>
+                        <hr>
+                        
+                            <p class="sub-menu-game">Genshin Impact</p>
+                            <p class="sub-menu-game">Mir4</p>
+                            <p class="sub-menu-game">Mobile Legends</p>
+                            <p class="sub-menu-game">Valorant</p>
+                            <p class="sub-menu-game">League of Legends</p>
+                            <p class="sub-menu-game">Wild Rift</p>
+                            
+                        <hr>
+
+        <!-- My Hobbies -->
+
+                    <div class="hob-info">
+                        <h3>My Hobbies</h3>
+                    </div>
+                    <hr>
+
+                        <p class="sub-menu-hob">Playing Online Games</p>
+                        <p class="sub-menu-hob">Watching Anime</p>
+                        <p class="sub-menu-hob">Reading Manhwa</p>
+                        <p class="sub-menu-hob">Sleeping</p>
+                        <p class="sub-menu-hob">Listening to Music</p>
+                        <p class="sub-menu-hob">Watching Tiktok Videos</p>
+                    
+                    </div>
+                </div>
+                </div>
+        
+        <!-- Profile Pic and Name -->
+
+            <div class="imgBox">
+                <img src="img/Cover.jpeg" alt="">
+            </div>
+            <h1 class="profile_name">Fredienick Joson</h1>
+            <small class="username"><i class="fa-solid fa-heart"></i></small>
+
+        <!-- Icons -->
+
+            <div class="profile_actions">
+                <button class="btn btn-primary">Follow</button>
+                <button class="icon-btn">
+                    <a href="https://www.facebook.com/Fredienick"><i class="fa-brands fa-facebook-f" style="color: #f1f3f3"></i></a>
+                </button>
+                <button class="icon-btn">
+                    <a href="https://www.instagram.com/30.fred.j/"><i class="fa-brands fa-instagram" style="color: #f1f3f3"></i></a>
+                </button>
+            </div>
+
+        <!-- Audio Name -->
+
+            <div class="music-player">
+                <p class="music-name">music name</p>
+
+        <!-- Audio Slider -->
+                <div class="song-slider">
+                    <input type="range" value="0" class="seek-bar">
+                    <span class="current-time">00:00</span>
+                    <span class="song-duration">00:00</span>
+                </div>
+
+        <!-- Audio Controls -->    
+
+                <div class="controls">
+                    <button class="btn backward-btn"><i class="fa-solid fa-backward-step" style="color: white;"></i></button>
+                    <button class="play-btn pause">
+                        <span class="play"></span>
+                        <span class="pause"></span>
+                    </button>
+                    <button class="btn forward-btn"><i class="fa-solid fa-forward-step" style="color: white;"></i></button>
+                </div>
+            </div>
+
+        <!-- Music Inventory -->
+
+            <script src="data.js"></script>
+
+        <!-- Audio Script -->
+
+            <script src="app.js"></script>
+            
+        <!-- Menu Bar Button Script -->
+
+            <script>
+                let subMenu = document.getElementById('subMenu');
+
+                function toggleMenu(){
+                    subMenu.classList.toggle('open-menu');
+                }
+            </script>
+
+        <!-- User icon script -->
+
+            <script>
+                let aboutMe = document.getElementById('aboutMe');
+
+                function toggleAbout(){
+                    aboutMe.classList.toggle('open-about');
+                }
+            </script>
+
+        </div>
+
+    </body>
+</html>

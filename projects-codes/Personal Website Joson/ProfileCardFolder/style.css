@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(#CC3DBE, #772ADB);
+    background-size: cover;
+}
+
+.card {
+    width: 90%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(20px);
+    color: #f1f3f3;
+    padding: 4rem 3rem;
+    border-radius: 16px;
+    border: 3px solid rgba(255, 255, 255, 0.04);
+    box-shadow: 20px 20px 22px rgba(0, 0, 0, 0.2), -20px -20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.btn{
+    width: 40px;
+    height: 40px;
+    background: #772ADB;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-btn{
+    background: none;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    right: 0;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: white;
+}
+
+.sub-menu-box{
+    position: absolute;
+    top: 10%;
+    right: 100%;
+    width: 250px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+.sub-menu-box.open-menu{
+    max-height: 600px;
+}
+
+.sub-menu{
+    background: transparent;
+    backdrop-filter: blur(20px);
+    color: #f1f3f3;
+    padding: 4rem 3rem;
+    border-radius: 16px;
+    border: 3px solid rgba(255, 255, 255, 0.04);
+    padding: 10px;
+    margin: 10px;
+}
+
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+
+.game-info{
+    display: flex;
+    align-items: center;
+}
+
+.game-info h3{
+    font-weight: 500;
+    color: white;
+    position: relative;
+    display: flex;
+}
+
+.hob-info h3{
+    font-weight: 500;
+    color: white;
+    position: relative;
+    display: flex;
+}
+
+.p{
+    font-weight: 200;
+}
+
+.sub-menu-game{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin: 10px 0;
+}
+
+.sub-menu-hob{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin: 10px 0;
+}
+
+.aboutme-btn{
+    background: none;
+    position: absolute;
+    left: 86%;
+    top: 10px;
+    right: 0;
+    margin-bottom: 30px;
+    font-size: 17px;
+    color: white;
+}
+
+.sub-about-box{
+    position: absolute;
+    top: 23%;
+    left: 100%;
+    width: 250px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+.sub-about-box.open-about{
+    max-height: 600px;
+}
+
+.about-me{
+    background: transparent;
+    backdrop-filter: blur(20px);
+    color: #f1f3f3;
+    padding: 4rem 3rem;
+    border-radius: 16px;
+    border: 3px solid rgba(255, 255, 255, 0.04);
+    padding: 10px;
+    margin: 10px;
+}
+
+.aboutme-info{
+    display: flex;
+    align-items: center;
+}
+
+.aboutme-info h3{
+    font-weight: 500;
+    color: white;
+    position: relative;
+    display: flex;
+}
+
+.about-me hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+
+.Me-info{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin: 10px 0;
+    padding: 2px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.imgBox {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 50%;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .profile_name{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+
+.card .profile_actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.card .profile_actions > *{
+    margin: 0 0.25rem;
+}
+
+.profile_actions .btn{
+    height: 46px;
+    background: transparent;
+    cursor: pointer;
+    border: 0;
+    line-height: 1;
+    color: #f1f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn-primary{
+    background: #f1f3f3;
+    color: #772ADB;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 30px;
+    width: 100%;
+    padding: 0px 1.37rem;
+    font-size: inherit;
+}
+
+.icon-btn{
+    width: 75px;
+    height: 49px;
+    padding: 0px 1rem;
+    background-image: linear-gradient(#CC3DBE, #772ADB);
+    border: 1px rgba(255, 255, 255, 0.04);
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.btn.btn-primary:hover{
+    box-shadow: 0 0 18px #772ADB;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.icon-btn:hover{
+    box-shadow: 0 0 20px #772ADB;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+.music-name{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.song-slider{
+    width: 100%;
+    position: relative;
+}
+
+.seek-bar{
+    -webkit-appearance: none;
+    width: 280px;
+    height: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: #CC3DBE;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.seek-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 1px;
+    height: 20px;
+    box-shadow: -400px 0 0 400px #852999;
+}
+
+.current-time,
+.song-duration{
+    font-size: 14px;
+}
+
+.song-duration{
+    position: absolute;
+    right: 0;
+}
+
+.controls{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.play-btn{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.play-btn span{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 30px;
+    border-radius: 2px;
+    background: white;
+    transition: 0.5s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.play-btn span:nth-child(2){
+    left: 55%;
+    transform-origin: center;
+}
+
+.play-btn.pause span:nth-child(2){
+    transform: translateY(-50%) scaleY(0);
+}
+
+.play-btn.pause span:nth-child(1){
+    width: 35%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    border-radius: 0;
+    clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+}
+
+.play-btn.pause{
+    animation: pulse 2s linear infinite;
+}
+
+.btn.backward-btn{
+    background: none;
+}
+
+.btn.forward-btn{
+    background: none;
+}
+
+@keyframes pulse{
+    0%{
+        box-shadow: 0;
+    }
+    50%{
+        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.01);
+    }
+    100%{
+        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.04);
+    }
+}
