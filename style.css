@@ -606,6 +606,10 @@ footer {
     .projects-container {
         grid-template-columns: 1fr;
     }
+
+    .quizzes-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 450px) {
