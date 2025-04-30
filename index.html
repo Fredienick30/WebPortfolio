@@ -176,22 +176,23 @@
          <section class="contact" id="contact">
             <h2 class="heading">Contact <span>Me!</span></h2>
 
-            <form action="#">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="1be5c899-3e15-45c2-97d3-c1510e899b35">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Mobile Number">
-                    <input type="text" placeholder="Subject">
+                    <input type="number" name="number" placeholder="Mobile Number" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
                 </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..."></textarea>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message..." required></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </form>
          </section>
 
         <!-- FOOTER -->
-
+<!--
         <footer class="footer">
             <div class="footer-container">
                 <div class="footer-content">
@@ -211,28 +212,58 @@
                         </div>
                     </div>
 
-                    <div class="footer-section">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#quizzes">Quizzes</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
                 </div>
-                
+            </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Fredienick - All rights reserved</p>
             </div>
+        </footer> -->
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-section contact-section">
+                        <h3>Get In Touch</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class='bx bxs-envelope'></i>
+                                <a href="mailto:josonfredienick30@gmail.com">josonfredienick30@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class='bx bxs-phone'></i>
+                                <a href="tel:+639394442005">+63 939 444 2005</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="footer-section social-section">
+                        <h3>Connect With Me</h3>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/Fredienick" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                            <a href="https://www.instagram.com/_keeeir/" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                            <a href="https://github.com/Fredienick30" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                            <a href="https://www.linkedin.com/in/fredienick-joson-4479b9190/" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; <span id="current-year">2025</span> Fredienick. All rights reserved.</p>
+                </div>
+            </div>
         </footer>
 
+       
         <!-- SCROLL REVEAL -->
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!-- TYPED JS -->
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <!-- Dynamic Year -->
+        <script>
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        </script>
 
      <!-- JS -->
       <script src="script.js"></script>
